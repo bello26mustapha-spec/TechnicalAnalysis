@@ -2,7 +2,7 @@ library(shiny)
 library(ggplot2)
 library(quantmod)
 
-# Find a project file whether the app runs from the project folder or from its own folder
+# Find a project file whether the app runs from the project folder
 find_file <- function(path) {
   for (p in c(path, file.path("..", path))) if (file.exists(p)) return(p)
   NULL
